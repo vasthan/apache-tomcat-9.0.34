@@ -53,11 +53,19 @@
     <!-- Tomcat的基础依赖 -->
     <dependencies>
     	<!-- https://mvnrepository.com/artifact/javax.xml/jaxrpc -->
+<!--		<dependency>-->
+<!--		    <groupId>javax.xml</groupId>-->
+<!--		    <artifactId>jaxrpc</artifactId>-->
+<!--		    <version>1.1</version>-->
+<!--		</dependency>-->
+
+		<!-- https://mvnrepository.com/artifact/geronimo-spec/geronimo-spec-jaxrpc -->
 		<dependency>
-		    <groupId>javax.xml</groupId>
-		    <artifactId>jaxrpc</artifactId>
-		    <version>1.1</version>
+			<groupId>geronimo-spec</groupId>
+			<artifactId>geronimo-spec-jaxrpc</artifactId>
+			<version>1.1-rc4</version>
 		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/javax.xml.soap/javax.xml.soap-api -->
 		<dependency>
@@ -97,5 +105,29 @@
 		    <scope>test</scope>
 		</dependency>
 
-    </dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/cglib/cglib-nodep -->
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib-nodep</artifactId>
+			<version>2.2.2</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.objenesis/objenesis -->
+		<dependency>
+			<groupId>org.objenesis</groupId>
+			<artifactId>objenesis</artifactId>
+			<version>1.2</version>
+			<scope>test</scope>
+		</dependency>
+
+
+	</dependencies>
 </project>
